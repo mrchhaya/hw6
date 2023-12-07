@@ -1,0 +1,84 @@
+default: null
+specializations:
+- - LblmatchFailure'Unds'FUN-UNTYPED'Unds'MatchResult{}
+  - default: null
+    specializations:
+    - - LblmatchFailure'Unds'FUN-UNTYPED'Unds'MatchResult{}
+      - args:
+        - - &id001 ['2']
+          - STRING.String
+        - - &id002 ['1']
+          - STRING.String
+        next:
+          default: null
+          specializations:
+          - - '1'
+            - action:
+              - 5203
+              - - - *id001
+                  - STRING.String
+            - []
+          - - '0'
+            - fail
+            - []
+          bitwidth: 1
+          sort: BOOL.Bool
+          occurrence: [eq, '2', and, '1']
+        function: hook_KEQUAL_eq
+        sort: BOOL.Bool
+        occurrence: [eq, '2', and, '1']
+      - []
+    - - LblmatchResult'LParUndsRParUnds'FUN-UNTYPED'Unds'MatchResult'Unds'Map{}
+      - action:
+        - 5206
+        - - - ['0', '1']
+            - MAP.Map
+          - - *id001
+            - STRING.String
+      - [MAP.Map]
+    sort: STRING.String
+    occurrence: *id002
+  - []
+- - LblmatchResult'LParUndsRParUnds'FUN-UNTYPED'Unds'MatchResult'Unds'Map{}
+  - default: null
+    specializations:
+    - - LblmatchFailure'Unds'FUN-UNTYPED'Unds'MatchResult{}
+      - action:
+        - 5204
+        - - - &id003 ['0', '2']
+            - MAP.Map
+          - - *id002
+            - STRING.String
+      - []
+    - - LblmatchResult'LParUndsRParUnds'FUN-UNTYPED'Unds'MatchResult'Unds'Map{}
+      - args:
+        - - &id004 ['0', '1']
+          - MAP.Map
+        - - *id003
+          - MAP.Map
+        next:
+          default: null
+          specializations:
+          - - '1'
+            - action:
+              - 5205
+              - - - *id004
+                  - MAP.Map
+                - - *id003
+                  - MAP.Map
+            - []
+          - - '0'
+            - fail
+            - []
+          bitwidth: 1
+          sort: BOOL.Bool
+          occurrence: &id005 [side_condition_5205]
+        function: side_condition_5205
+        sort: BOOL.Bool
+        occurrence: *id005
+      - [MAP.Map]
+    sort: STRING.String
+    occurrence: *id002
+  - [MAP.Map]
+sort: STRING.String
+occurrence: *id001

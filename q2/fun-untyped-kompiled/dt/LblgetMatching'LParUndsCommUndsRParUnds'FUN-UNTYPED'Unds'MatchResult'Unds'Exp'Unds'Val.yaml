@@ -1,0 +1,394 @@
+default: &id001
+  action:
+  - 4879
+  - - - &id021 ['1']
+      - STRING.String
+    - - &id002 ['2']
+      - STRING.String
+specializations:
+- - Lbl'LSqBUndsRSqBUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'Exps{}
+  - default: *id001
+    specializations:
+    - - Lbl'LSqBUndsRSqBUnds'FUN-UNTYPED-COMMON'Unds'Val'Unds'Vals{}
+      - action:
+        - 4880
+        - - - ['0', '1']
+            - STRING.String
+          - - ['0', '2']
+            - STRING.String
+      - [STRING.String]
+    sort: STRING.String
+    occurrence: *id002
+  - [STRING.String]
+- - Lbl'LSqBUndsPipeUndsRSqBUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'Exps'Unds'Exp{}
+  - default: *id001
+    specializations:
+    - - Lbl'LSqBUndsRSqBUnds'FUN-UNTYPED-COMMON'Unds'Val'Unds'Vals{}
+      - default: *id001
+        specializations:
+        - - Lbl'UndsCommUndsUnds'FUN-UNTYPED-COMMON'Unds'Vals'Unds'Val'Unds'Vals{}
+          - default: *id001
+            specializations:
+            - - Lbl'UndsCommUndsUnds'FUN-UNTYPED-COMMON'Unds'Exps'Unds'Exp'Unds'Exps{}
+              - default: *id001
+                specializations:
+                - - inj{SortBottoms{}, SortExps{}}
+                  - default: *id001
+                    specializations:
+                    - - Lbl'Stop'List'LBraQuotUndsCommUndsUnds'FUN-UNTYPED-COMMON'Unds'Bottoms'Unds'Bottom'Unds'Bottoms'QuotRBraUnds'Bottoms{}
+                      - action:
+                        - 4881
+                        - - - &id004 ['1', '0', '1']
+                            - STRING.String
+                          - - &id003 ['0', '1', '0', '1']
+                            - STRING.String
+                          - - ['0', '0', '1']
+                            - STRING.String
+                          - - &id005 ['1', '1']
+                            - STRING.String
+                          - - &id006 ['0', '0', '2']
+                            - STRING.String
+                          - - &id007 ['1', '0', '2']
+                            - STRING.String
+                      - []
+                    sort: STRING.String
+                    occurrence: *id003
+                  - [STRING.String]
+                sort: STRING.String
+                occurrence: *id004
+              - [STRING.String, STRING.String]
+            - - inj{SortVals{}, SortExps{}}
+              - default: *id001
+                specializations:
+                - - Lbl'UndsCommUndsUnds'FUN-UNTYPED-COMMON'Unds'Vals'Unds'Val'Unds'Vals{}
+                  - default: *id001
+                    specializations:
+                    - - inj{SortBottoms{}, SortVals{}}
+                      - default: *id001
+                        specializations:
+                        - - Lbl'Stop'List'LBraQuotUndsCommUndsUnds'FUN-UNTYPED-COMMON'Unds'Bottoms'Unds'Bottom'Unds'Bottoms'QuotRBraUnds'Bottoms{}
+                          - next:
+                              next: &id011
+                                action:
+                                - 4881
+                                - - - &id008 ['-1', '1', '0', '0', '1']
+                                    - STRING.String
+                                  - - &id010 ['0', '1', '0', '0', '1']
+                                    - STRING.String
+                                  - - &id009 ['-1', '0', '0', '0', '1']
+                                    - STRING.String
+                                  - - *id005
+                                    - STRING.String
+                                  - - *id006
+                                    - STRING.String
+                                  - - *id007
+                                    - STRING.String
+                              pattern:
+                                args:
+                                - hook: STRING.String
+                                  occurrence: ['1', '0', '0', '1']
+                                constructor: inj{SortVals{}, SortExps{}}
+                              occurrence: *id008
+                              sort: STRING.String
+                            pattern:
+                              args:
+                              - hook: STRING.String
+                                occurrence: ['0', '0', '0', '1']
+                              constructor: inj{SortVal{}, SortExp{}}
+                            occurrence: *id009
+                            sort: STRING.String
+                          - []
+                        sort: STRING.String
+                        occurrence: *id010
+                      - [STRING.String]
+                    sort: STRING.String
+                    occurrence: ['1', '0', '0', '1']
+                  - [STRING.String, STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '0', '1']
+              - [STRING.String]
+            - - inj{SortNames{}, SortExps{}}
+              - default: *id001
+                specializations:
+                - - Lbl'UndsCommUndsUnds'FUN-UNTYPED-COMMON'Unds'Names'Unds'Name'Unds'Names{}
+                  - default: *id001
+                    specializations:
+                    - - inj{SortBottoms{}, SortNames{}}
+                      - default: *id001
+                        specializations:
+                        - - Lbl'Stop'List'LBraQuotUndsCommUndsUnds'FUN-UNTYPED-COMMON'Unds'Bottoms'Unds'Bottom'Unds'Bottoms'QuotRBraUnds'Bottoms{}
+                          - next:
+                              next: *id011
+                              pattern:
+                                args:
+                                - hook: STRING.String
+                                  occurrence: ['1', '0', '0', '1']
+                                constructor: inj{SortNames{}, SortExps{}}
+                              occurrence: ['-1', '1', '0', '0', '1']
+                              sort: STRING.String
+                            pattern:
+                              args:
+                              - hook: STRING.String
+                                occurrence: ['0', '0', '0', '1']
+                              constructor: inj{SortName{}, SortExp{}}
+                            occurrence: ['-1', '0', '0', '0', '1']
+                            sort: STRING.String
+                          - []
+                        sort: STRING.String
+                        occurrence: ['0', '1', '0', '0', '1']
+                      - [STRING.String]
+                    sort: STRING.String
+                    occurrence: ['1', '0', '0', '1']
+                  - [STRING.String, STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '0', '1']
+              - [STRING.String]
+            sort: STRING.String
+            occurrence: ['0', '1']
+          - [STRING.String, STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '2']
+      - [STRING.String]
+    sort: STRING.String
+    occurrence: *id002
+  - [STRING.String, STRING.String]
+- - Lbl'UndsLParUndsRParUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'ConstructorName'Unds'Exps{}
+  - default: *id001
+    specializations:
+    - - Lbl'UndsLParUndsRParUnds'FUN-UNTYPED-COMMON'Unds'Val'Unds'ConstructorName'Unds'Vals{}
+      - args:
+        - - &id012 ['0', '1']
+          - STRING.String
+        - - ['0', '2']
+          - STRING.String
+        next:
+          default: null
+          specializations:
+          - - '1'
+            - action:
+              - 4882
+              - - - *id012
+                  - STRING.String
+                - - ['1', '1']
+                  - STRING.String
+                - - ['1', '2']
+                  - STRING.String
+            - []
+          - - '0'
+            - *id001
+            - []
+          bitwidth: 1
+          sort: BOOL.Bool
+          occurrence: [eq, '0', '1', and, '0', '2']
+        function: hook_KEQUAL_eq
+        sort: BOOL.Bool
+        occurrence: [eq, '0', '1', and, '0', '2']
+      - [STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: *id002
+  - [STRING.String, STRING.String]
+- - inj{SortBool{}, SortExp{}}
+  - default: *id001
+    specializations:
+    - - inj{SortBool{}, SortVal{}}
+      - args:
+        - - &id013 ['0', '1']
+          - BOOL.Bool
+        - - ['0', '2']
+          - BOOL.Bool
+        next:
+          default: null
+          specializations:
+          - - '1'
+            - action:
+              - 4883
+              - - - *id013
+                  - BOOL.Bool
+            - []
+          - - '0'
+            - *id001
+            - []
+          bitwidth: 1
+          sort: BOOL.Bool
+          occurrence: [eq, '0', '1', and, '0', '2']
+        function: hook_BOOL_eq
+        sort: BOOL.Bool
+        occurrence: [eq, '0', '1', and, '0', '2']
+      - [BOOL.Bool]
+    sort: STRING.String
+    occurrence: *id002
+  - [BOOL.Bool]
+- - inj{SortConstructorName{}, SortExp{}}
+  - default: *id001
+    specializations:
+    - - inj{SortConstructorName{}, SortVal{}}
+      - args:
+        - - &id014 ['0', '1']
+          - STRING.String
+        - - ['0', '2']
+          - STRING.String
+        next:
+          default: null
+          specializations:
+          - - '1'
+            - action:
+              - 4884
+              - - - *id014
+                  - STRING.String
+            - []
+          - - '0'
+            - *id001
+            - []
+          bitwidth: 1
+          sort: BOOL.Bool
+          occurrence: [eq, '0', '1', and, '0', '2']
+        function: hook_KEQUAL_eq
+        sort: BOOL.Bool
+        occurrence: [eq, '0', '1', and, '0', '2']
+      - [STRING.String]
+    sort: STRING.String
+    occurrence: *id002
+  - [STRING.String]
+- - inj{SortInt{}, SortExp{}}
+  - default: *id001
+    specializations:
+    - - inj{SortInt{}, SortVal{}}
+      - args:
+        - - &id015 ['0', '1']
+          - INT.Int
+        - - ['0', '2']
+          - INT.Int
+        next:
+          default: null
+          specializations:
+          - - '1'
+            - action:
+              - 4885
+              - - - *id015
+                  - INT.Int
+            - []
+          - - '0'
+            - *id001
+            - []
+          bitwidth: 1
+          sort: BOOL.Bool
+          occurrence: [eq, '0', '1', and, '0', '2']
+        function: hook_INT_eq
+        sort: BOOL.Bool
+        occurrence: [eq, '0', '1', and, '0', '2']
+      - [INT.Int]
+    sort: STRING.String
+    occurrence: *id002
+  - [INT.Int]
+- - inj{SortName{}, SortExp{}}
+  - action:
+    - 4886
+    - - - ['0', '1']
+        - STRING.String
+      - - *id002
+        - STRING.String
+  - [STRING.String]
+- - inj{SortString{}, SortExp{}}
+  - default: *id001
+    specializations:
+    - - inj{SortString{}, SortVal{}}
+      - args:
+        - - &id016 ['0', '1']
+          - STRING.String
+        - - ['0', '2']
+          - STRING.String
+        next:
+          default: null
+          specializations:
+          - - '1'
+            - action:
+              - 4887
+              - - - *id016
+                  - STRING.String
+            - []
+          - - '0'
+            - *id001
+            - []
+          bitwidth: 1
+          sort: BOOL.Bool
+          occurrence: [eq, '0', '1', and, '0', '2']
+        function: hook_KEQUAL_eq
+        sort: BOOL.Bool
+        occurrence: [eq, '0', '1', and, '0', '2']
+      - [STRING.String]
+    sort: STRING.String
+    occurrence: *id002
+  - [STRING.String]
+- - inj{SortVal{}, SortExp{}}
+  - default: *id001
+    specializations:
+    - - Lbl'LSqBUndsRSqBUnds'FUN-UNTYPED-COMMON'Unds'Val'Unds'Vals{}
+      - default: *id001
+        specializations:
+        - - Lbl'LSqBUndsRSqBUnds'FUN-UNTYPED-COMMON'Unds'Val'Unds'Vals{}
+          - next:
+              action:
+              - 4880
+              - - - &id017 ['-1', '0', '0', '1']
+                  - STRING.String
+                - - ['0', '2']
+                  - STRING.String
+            pattern:
+              args:
+              - hook: STRING.String
+                occurrence: ['0', '0', '1']
+              constructor: inj{SortVals{}, SortExps{}}
+            occurrence: *id017
+            sort: STRING.String
+          - [STRING.String]
+        sort: STRING.String
+        occurrence: &id020 ['0', '1']
+      - [STRING.String]
+    - - Lbl'UndsLParUndsRParUnds'FUN-UNTYPED-COMMON'Unds'Val'Unds'ConstructorName'Unds'Vals{}
+      - default: *id001
+        specializations:
+        - - Lbl'UndsLParUndsRParUnds'FUN-UNTYPED-COMMON'Unds'Val'Unds'ConstructorName'Unds'Vals{}
+          - next:
+              args:
+              - - &id018 ['0', '2']
+                - STRING.String
+              - - ['0', '0', '1']
+                - STRING.String
+              next:
+                default: null
+                specializations:
+                - - '1'
+                  - action:
+                    - 4882
+                    - - - *id018
+                        - STRING.String
+                      - - &id019 ['-1', '1', '0', '1']
+                        - STRING.String
+                      - - ['1', '2']
+                        - STRING.String
+                  - []
+                - - '0'
+                  - *id001
+                  - []
+                bitwidth: 1
+                sort: BOOL.Bool
+                occurrence: [eq, '0', '2', and, '0', '0', '1']
+              function: hook_KEQUAL_eq
+              sort: BOOL.Bool
+              occurrence: [eq, '0', '2', and, '0', '0', '1']
+            pattern:
+              args:
+              - hook: STRING.String
+                occurrence: ['1', '0', '1']
+              constructor: inj{SortVals{}, SortExps{}}
+            occurrence: *id019
+            sort: STRING.String
+          - [STRING.String, STRING.String]
+        sort: STRING.String
+        occurrence: *id020
+      - [STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: *id002
+  - [STRING.String]
+sort: STRING.String
+occurrence: *id021

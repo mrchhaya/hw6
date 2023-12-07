@@ -1,0 +1,31 @@
+default: null
+specializations:
+- - Lbl'Stop'List'LBraQuotUnds'and'UndsUnds'FUN-UNTYPED-COMMON'Unds'Bindings'Unds'Binding'Unds'Bindings'QuotRBraUnds'Bindings{}
+  - action:
+    - 5209
+    - []
+  - []
+- - Lbl'Unds'and'UndsUnds'FUN-UNTYPED-COMMON'Unds'Bindings'Unds'Binding'Unds'Bindings{}
+  - default: null
+    specializations:
+    - - Lbl'UndsEqlsUndsUnds'FUN-UNTYPED-COMMON'Unds'Binding'Unds'Exp'Unds'Exp{}
+      - default: fail
+        specializations:
+        - - inj{SortName{}, SortExp{}}
+          - action:
+            - 5210
+            - - - ['1', '0', '1']
+                - STRING.String
+              - - ['1', '1']
+                - STRING.String
+              - - ['0', '0', '0', '1']
+                - STRING.String
+          - [STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '0', '1']
+      - [STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

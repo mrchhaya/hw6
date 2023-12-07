@@ -1,0 +1,25 @@
+default: fail
+specializations:
+- - kseq{}
+  - default: fail
+    specializations:
+    - - dotk{}
+      - default: fail
+        specializations:
+        - - inj{SortThreadCellSet{}, SortKItem{}}
+          - action:
+            - 5268
+            - - - ['0', '0', '1']
+                - SET.Set
+          - [SET.Set]
+        - - inj{SortThreadCell{}, SortKItem{}}
+          - fail
+          - [STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '1']
+      - []
+    sort: STRING.String
+    occurrence: ['1', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

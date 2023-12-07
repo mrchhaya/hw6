@@ -1,0 +1,96 @@
+default: fail
+specializations:
+- - inj{SortVals{}, SortExps{}}
+  - default: fail
+    specializations:
+    - - inj{SortVal{}, SortExp{}}
+      - action:
+        - 4680
+        - - - ['0', '1']
+            - STRING.String
+          - - &id001 ['0', '2']
+            - STRING.String
+      - [STRING.String]
+    - - inj{SortCons{}, SortExp{}}
+      - &id002
+        action:
+        - 4680
+        - - - &id003 ['1']
+            - STRING.String
+          - - *id001
+            - STRING.String
+      - [STRING.String]
+    - - inj{SortString{}, SortExp{}}
+      - *id002
+      - [STRING.String]
+    - - inj{SortBool{}, SortExp{}}
+      - *id002
+      - [BOOL.Bool]
+    - - inj{SortConstructorName{}, SortExp{}}
+      - *id002
+      - [STRING.String]
+    - - inj{SortInt{}, SortExp{}}
+      - *id002
+      - [INT.Int]
+    sort: STRING.String
+    occurrence: *id003
+  - [STRING.String]
+- - inj{SortNames{}, SortExps{}}
+  - default: fail
+    specializations:
+    - - inj{SortName{}, SortExp{}}
+      - action:
+        - 4681
+        - - - ['0', '1']
+            - STRING.String
+          - - ['0', '2']
+            - STRING.String
+      - [STRING.String]
+    sort: STRING.String
+    occurrence: *id003
+  - [STRING.String]
+- - inj{SortBottoms{}, SortExps{}}
+  - default: fail
+    specializations:
+    - - inj{SortVal{}, SortExp{}}
+      - action:
+        - 4680
+        - - - ['0', '1']
+            - STRING.String
+          - - &id004 ['2']
+            - STRING.String
+      - [STRING.String]
+    - - inj{SortName{}, SortExp{}}
+      - action:
+        - 4681
+        - - - ['0', '1']
+            - STRING.String
+          - - *id004
+            - STRING.String
+      - [STRING.String]
+    - - inj{SortCons{}, SortExp{}}
+      - &id005
+        action:
+        - 4680
+        - - - *id003
+            - STRING.String
+          - - *id004
+            - STRING.String
+      - [STRING.String]
+    - - inj{SortString{}, SortExp{}}
+      - *id005
+      - [STRING.String]
+    - - inj{SortBool{}, SortExp{}}
+      - *id005
+      - [BOOL.Bool]
+    - - inj{SortConstructorName{}, SortExp{}}
+      - *id005
+      - [STRING.String]
+    - - inj{SortInt{}, SortExp{}}
+      - *id005
+      - [INT.Int]
+    sort: STRING.String
+    occurrence: *id003
+  - [STRING.String]
+sort: STRING.String
+occurrence: *id004

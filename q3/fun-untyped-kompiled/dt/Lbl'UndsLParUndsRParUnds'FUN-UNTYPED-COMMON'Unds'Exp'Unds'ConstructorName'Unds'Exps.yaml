@@ -1,0 +1,20 @@
+default: fail
+specializations:
+- - inj{SortVals{}, SortExps{}}
+  - action:
+    - 4847
+    - - - &id001 ['1']
+        - STRING.String
+      - - ['0', '2']
+        - STRING.String
+  - [STRING.String]
+- - inj{SortBottoms{}, SortExps{}}
+  - action:
+    - 4847
+    - - - *id001
+        - STRING.String
+      - - &id002 ['2']
+        - STRING.String
+  - [STRING.String]
+sort: STRING.String
+occurrence: *id002

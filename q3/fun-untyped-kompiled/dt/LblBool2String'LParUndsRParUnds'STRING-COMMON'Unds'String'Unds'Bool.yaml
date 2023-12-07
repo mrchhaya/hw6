@@ -1,0 +1,15 @@
+default: null
+specializations:
+- - '0'
+  - action:
+    - 4997
+    - []
+  - []
+- - '1'
+  - action:
+    - 4998
+    - []
+  - []
+bitwidth: 1
+sort: BOOL.Bool
+occurrence: ['1']

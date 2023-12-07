@@ -1,0 +1,103 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'T'-GT-'{}
+      - default: null
+        specializations:
+        - - Lbl'-LT-'env'-GT-'{}
+          - default: null
+            specializations:
+            - - Lbl'-LT-'k'-GT-'{}
+              - default: fail
+                specializations:
+                - - kseq{}
+                  - default: fail
+                    specializations:
+                    - - kseq{}
+                      - default: fail
+                        specializations:
+                        - - LblsetEnv'LParUndsRParUnds'FUN-UNTYPED'Unds'KItem'Unds'Map{}
+                          - default: fail
+                            specializations:
+                            - - inj{SortVal{}, SortKItem{}}
+                              - action:
+                                - 4742
+                                - - - &id001 ['1', '1']
+                                    - STRING.String
+                                  - - ['1', '1', '0', '0', '0', '1']
+                                    - STRING.String
+                                  - - ['0', '0', '0', '0', '0', '1']
+                                    - STRING.String
+                                  - - ['0', '1', '0', '1']
+                                    - MAP.Map
+                                  - - &id003 ['2', '0', '1']
+                                    - STRING.String
+                                  - - &id004 ['3', '0', '1']
+                                    - STRING.String
+                                  - - &id005 ['4', '0', '1']
+                                    - STRING.String
+                                  - - &id002 ['0', '0', '0', '0', '1']
+                                    - STRING.String
+                                  - - ['0', '0', '1', '0', '0', '0', '1']
+                                    - MAP.Map
+                              - [STRING.String]
+                            - - inj{SortBool{}, SortKItem{}}
+                              - &id006
+                                action:
+                                - 4742
+                                - - - *id001
+                                    - STRING.String
+                                  - - ['1', '1', '0', '0', '0', '1']
+                                    - STRING.String
+                                  - - *id002
+                                    - STRING.String
+                                  - - ['0', '1', '0', '1']
+                                    - MAP.Map
+                                  - - *id003
+                                    - STRING.String
+                                  - - *id004
+                                    - STRING.String
+                                  - - *id005
+                                    - STRING.String
+                                  - - *id002
+                                    - STRING.String
+                                  - - ['0', '0', '1', '0', '0', '0', '1']
+                                    - MAP.Map
+                              - [BOOL.Bool]
+                            - - inj{SortConstructorName{}, SortKItem{}}
+                              - *id006
+                              - [STRING.String]
+                            - - inj{SortInt{}, SortKItem{}}
+                              - *id006
+                              - [INT.Int]
+                            - - inj{SortCons{}, SortKItem{}}
+                              - *id006
+                              - [STRING.String]
+                            - - inj{SortString{}, SortKItem{}}
+                              - *id006
+                              - [STRING.String]
+                            sort: STRING.String
+                            occurrence: ['0', '0', '0', '0', '1']
+                          - [MAP.Map]
+                        sort: STRING.String
+                        occurrence: ['0', '1', '0', '0', '0', '1']
+                      - [STRING.String, STRING.String]
+                    sort: STRING.String
+                    occurrence: ['1', '0', '0', '0', '1']
+                  - [STRING.String, STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '0', '0', '1']
+              - [STRING.String]
+            sort: STRING.String
+            occurrence: ['0', '0', '1']
+          - [MAP.Map]
+        sort: STRING.String
+        occurrence: ['1', '0', '1']
+      - [STRING.String, STRING.String, STRING.String, STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

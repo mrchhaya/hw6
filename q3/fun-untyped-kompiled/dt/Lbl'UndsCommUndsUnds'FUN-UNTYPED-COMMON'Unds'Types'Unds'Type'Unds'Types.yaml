@@ -1,0 +1,18 @@
+default: fail
+specializations:
+- - inj{SortTypeVars{}, SortTypes{}}
+  - default: fail
+    specializations:
+    - - inj{SortTypeVar{}, SortType{}}
+      - action:
+        - 4844
+        - - - ['0', '1']
+            - STRING.String
+          - - ['0', '2']
+            - STRING.String
+      - [STRING.String]
+    sort: STRING.String
+    occurrence: ['1']
+  - [STRING.String]
+sort: STRING.String
+occurrence: ['2']

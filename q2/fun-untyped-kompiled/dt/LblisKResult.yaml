@@ -1,0 +1,48 @@
+default: &id001
+  action:
+  - 4960
+  - - - &id004 ['1']
+      - STRING.String
+specializations:
+- - kseq{}
+  - default: *id001
+    specializations:
+    - - dotk{}
+      - default: *id001
+        specializations:
+        - - inj{SortVals{}, SortKItem{}}
+          - &id002
+            action:
+            - 4961
+            - - - &id003 ['0', '1']
+                - STRING.String
+          - [STRING.String]
+        - - inj{SortVal{}, SortKItem{}}
+          - *id002
+          - [STRING.String]
+        - - inj{SortBottoms{}, SortKItem{}}
+          - *id002
+          - [STRING.String]
+        - - inj{SortBool{}, SortKItem{}}
+          - *id002
+          - [BOOL.Bool]
+        - - inj{SortConstructorName{}, SortKItem{}}
+          - *id002
+          - [STRING.String]
+        - - inj{SortInt{}, SortKItem{}}
+          - *id002
+          - [INT.Int]
+        - - inj{SortCons{}, SortKItem{}}
+          - *id002
+          - [STRING.String]
+        - - inj{SortString{}, SortKItem{}}
+          - *id002
+          - [STRING.String]
+        sort: STRING.String
+        occurrence: *id003
+      - []
+    sort: STRING.String
+    occurrence: ['1', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: *id004
