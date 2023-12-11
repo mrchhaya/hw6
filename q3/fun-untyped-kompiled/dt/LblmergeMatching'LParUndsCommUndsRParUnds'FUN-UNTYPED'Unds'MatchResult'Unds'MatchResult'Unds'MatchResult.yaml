@@ -14,7 +14,7 @@ specializations:
           specializations:
           - - '1'
             - action:
-              - 5203
+              - 5255
               - - - *id001
                   - STRING.String
             - []
@@ -30,7 +30,7 @@ specializations:
       - []
     - - LblmatchResult'LParUndsRParUnds'FUN-UNTYPED'Unds'MatchResult'Unds'Map{}
       - action:
-        - 5206
+        - 5258
         - - - ['0', '1']
             - MAP.Map
           - - *id001
@@ -44,7 +44,7 @@ specializations:
     specializations:
     - - LblmatchFailure'Unds'FUN-UNTYPED'Unds'MatchResult{}
       - action:
-        - 5204
+        - 5256
         - - - &id003 ['0', '2']
             - MAP.Map
           - - *id002
@@ -61,7 +61,7 @@ specializations:
           specializations:
           - - '1'
             - action:
-              - 5205
+              - 5257
               - - - *id004
                   - MAP.Map
                 - - *id003
@@ -72,8 +72,8 @@ specializations:
             - []
           bitwidth: 1
           sort: BOOL.Bool
-          occurrence: &id005 [side_condition_5205]
-        function: side_condition_5205
+          occurrence: &id005 [side_condition_5257]
+        function: side_condition_5257
         sort: BOOL.Bool
         occurrence: *id005
       - [MAP.Map]

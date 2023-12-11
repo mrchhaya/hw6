@@ -5,7 +5,7 @@ specializations:
     specializations:
     - - inj{SortVal{}, SortExp{}}
       - action:
-        - 4837
+        - 4887
         - - - &id001 ['0', '1']
             - STRING.String
           - - ['0', '2']
@@ -14,7 +14,7 @@ specializations:
     - - inj{SortCons{}, SortExp{}}
       - &id002
         action:
-        - 4837
+        - 4887
         - - - *id001
             - STRING.String
           - - &id003 ['2']

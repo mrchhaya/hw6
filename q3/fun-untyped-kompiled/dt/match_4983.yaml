@@ -35,7 +35,7 @@ specializations:
                                   - - inj{SortExp{}, SortKItem{}}
                                     - default: fail
                                       specializations:
-                                      - - Lblif'Unds'then'Unds'else'UndsUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'Exp'Unds'Exp'Unds'Exp{}
+                                      - - Lbl'UndsAnd-And-UndsUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'Exp'Unds'Exp{}
                                         - args:
                                           - - ['0', '0', '0', '0', '0', key, '0',
                                               '0', '0', '1']
@@ -71,9 +71,6 @@ specializations:
                                                   - - ['1', '0', '0', '0', '0', key,
                                                       '0', '0', '0', '1']
                                                     - STRING.String
-                                                  - - ['2', '0', '0', '0', '0', key,
-                                                      '0', '0', '0', '1']
-                                                    - STRING.String
                                               - []
                                             - - '0'
                                               - fail
@@ -84,7 +81,7 @@ specializations:
                                           function: side_condition_4983
                                           sort: BOOL.Bool
                                           occurrence: *id001
-                                        - [STRING.String, STRING.String, STRING.String]
+                                        - [STRING.String, STRING.String]
                                       sort: STRING.String
                                       occurrence: ['0', '0', '0', '0', key, '0', '0',
                                         '0', '1']

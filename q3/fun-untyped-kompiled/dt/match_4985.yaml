@@ -35,7 +35,7 @@ specializations:
                                   - - inj{SortExp{}, SortKItem{}}
                                     - default: fail
                                       specializations:
-                                      - - Lblif'Unds'then'Unds'else'UndsUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'Exp'Unds'Exp'Unds'Exp{}
+                                      - - Lbl'UndsAnd-And-UndsUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'Exp'Unds'Exp{}
                                         - default: fail
                                           specializations:
                                           - - inj{SortBool{}, SortExp{}}
@@ -50,9 +50,6 @@ specializations:
                                                       - SET.Set
                                                     - - ['1', '0', '0', key, '0',
                                                         '0', '0', '1']
-                                                      - STRING.String
-                                                    - - ['2', '0', '0', '0', '0',
-                                                        key, '0', '0', '0', '1']
                                                       - STRING.String
                                                     - - ['1', key, '0', '0', '0',
                                                         '1']
@@ -80,7 +77,7 @@ specializations:
                                           sort: STRING.String
                                           occurrence: ['0', '0', '0', '0', '0', key,
                                             '0', '0', '0', '1']
-                                        - [STRING.String, STRING.String, STRING.String]
+                                        - [STRING.String, STRING.String]
                                       sort: STRING.String
                                       occurrence: ['0', '0', '0', '0', key, '0', '0',
                                         '0', '1']

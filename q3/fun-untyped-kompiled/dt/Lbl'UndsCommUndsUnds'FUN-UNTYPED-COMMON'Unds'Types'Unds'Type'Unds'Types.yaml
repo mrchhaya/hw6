@@ -5,7 +5,7 @@ specializations:
     specializations:
     - - inj{SortTypeVar{}, SortType{}}
       - action:
-        - 4844
+        - 4894
         - - - ['0', '1']
             - STRING.String
           - - ['0', '2']

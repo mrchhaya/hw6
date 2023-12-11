@@ -1,6 +1,6 @@
 default: &id001
   action:
-  - 5201
+  - 5253
   - - - &id003 ['1']
       - STRING.String
 specializations:
@@ -12,13 +12,13 @@ specializations:
         specializations:
         - - inj{SortVals{}, SortKItem{}}
           - action:
-            - 5202
+            - 5254
             - - - ['0', '0', '1']
                 - STRING.String
           - [STRING.String]
         - - inj{SortBottoms{}, SortKItem{}}
           - action:
-            - 5202
+            - 5254
             - - - &id002 ['0', '1']
                 - STRING.String
           - [STRING.String]

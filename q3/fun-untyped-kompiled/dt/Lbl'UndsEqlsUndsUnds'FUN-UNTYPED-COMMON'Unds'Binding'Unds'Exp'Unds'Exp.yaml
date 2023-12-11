@@ -2,7 +2,7 @@ default: fail
 specializations:
 - - Lbl'UndsUndsUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'Exp'Unds'Exp{}
   - action:
-    - 5008
+    - 5060
     - - - &id001 ['2']
         - STRING.String
       - - ['0', '1']
@@ -17,7 +17,7 @@ specializations:
       - next:
           next:
             action:
-            - 5008
+            - 5060
             - - - *id001
                 - STRING.String
               - - &id003 ['-1', '0', '0', '1']

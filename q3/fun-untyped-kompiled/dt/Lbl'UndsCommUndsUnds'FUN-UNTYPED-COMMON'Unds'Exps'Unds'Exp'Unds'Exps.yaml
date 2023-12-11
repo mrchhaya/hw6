@@ -5,7 +5,7 @@ specializations:
     specializations:
     - - inj{SortVal{}, SortExp{}}
       - action:
-        - 4845
+        - 4895
         - - - ['0', '1']
             - STRING.String
           - - &id001 ['0', '2']
@@ -14,7 +14,7 @@ specializations:
     - - inj{SortCons{}, SortExp{}}
       - &id002
         action:
-        - 4845
+        - 4895
         - - - &id003 ['1']
             - STRING.String
           - - *id001
@@ -40,7 +40,7 @@ specializations:
     specializations:
     - - inj{SortName{}, SortExp{}}
       - action:
-        - 4846
+        - 4896
         - - - ['0', '1']
             - STRING.String
           - - ['0', '2']
@@ -54,7 +54,7 @@ specializations:
     specializations:
     - - inj{SortVal{}, SortExp{}}
       - action:
-        - 4845
+        - 4895
         - - - ['0', '1']
             - STRING.String
           - - &id004 ['2']
@@ -62,7 +62,7 @@ specializations:
       - [STRING.String]
     - - inj{SortName{}, SortExp{}}
       - action:
-        - 4846
+        - 4896
         - - - ['0', '1']
             - STRING.String
           - - *id004
@@ -71,7 +71,7 @@ specializations:
     - - inj{SortCons{}, SortExp{}}
       - &id005
         action:
-        - 4845
+        - 4895
         - - - *id003
             - STRING.String
           - - *id004

@@ -2,12 +2,12 @@ default: null
 specializations:
 - - '0'
   - action:
-    - 4997
+    - 5049
     - []
   - []
 - - '1'
   - action:
-    - 4998
+    - 5050
     - []
   - []
 bitwidth: 1

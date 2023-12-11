@@ -16,7 +16,7 @@ specializations:
                   - [SET.Set]
                 - - '1'
                   - args:
-                    - - &id002 ['0', '0', '0', '1']
+                    - - &id010 ['0', '0', '0', '1']
                       - SET.Set
                     - - [key, '0', '0', '0', '1']
                       - STRING.String
@@ -26,96 +26,115 @@ specializations:
                       - - Lbl'-LT-'thread'-GT-'{}
                         - default: null
                           specializations:
-                          - - Lbl'-LT-'k'-GT-'{}
-                            - default: fail
+                          - - Lbl'-LT-'env'-GT-'{}
+                            - default: null
                               specializations:
-                              - - kseq{}
+                              - - Lbl'-LT-'k'-GT-'{}
                                 - default: fail
                                   specializations:
-                                  - - inj{SortExp{}, SortKItem{}}
+                                  - - kseq{}
                                     - default: fail
                                       specializations:
-                                      - - Lbl'Unds-GT-UndsUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'Exp'Unds'Exp{}
-                                        - args:
-                                          - - ['1', '0', '0', '0', '0', key, '0',
-                                              '0', '0', '1']
-                                            - STRING.String
-                                          next:
-                                            default: null
-                                            specializations:
-                                            - - '1'
-                                              - action:
-                                                - 4968
-                                                - - - ['1', '1']
-                                                    - STRING.String
-                                                  - - [rem, '0', '0', '0', '1']
-                                                    - SET.Set
-                                                  - - ['1', '0', '0', key, '0', '0',
-                                                      '0', '1']
-                                                    - STRING.String
-                                                  - - ['1', key, '0', '0', '0', '1']
-                                                    - STRING.String
-                                                  - - ['2', key, '0', '0', '0', '1']
-                                                    - STRING.String
-                                                  - - ['1', '0', '1']
-                                                    - STRING.String
-                                                  - - ['2', '0', '1']
-                                                    - STRING.String
-                                                  - - ['3', '0', '1']
-                                                    - STRING.String
-                                                  - - ['4', '0', '1']
-                                                    - STRING.String
-                                                  - - ['1', '0', '0', '0', '0', key,
-                                                      '0', '0', '0', '1']
-                                                    - STRING.String
-                                                  - - ['0', '0', '0', '0', '0', key,
-                                                      '0', '0', '0', '1']
-                                                    - STRING.String
-                                              - []
-                                            - - '0'
-                                              - fail
-                                              - []
-                                            bitwidth: 1
-                                            sort: BOOL.Bool
-                                            occurrence: &id001 [side_condition_4968]
-                                          function: side_condition_4968
-                                          sort: BOOL.Bool
-                                          occurrence: *id001
+                                      - - kseq{}
+                                        - default: fail
+                                          specializations:
+                                          - - LblsetEnv'LParUndsRParUnds'FUN-UNTYPED'Unds'KItem'Unds'Map{}
+                                            - default: fail
+                                              specializations:
+                                              - - inj{SortVal{}, SortKItem{}}
+                                                - action:
+                                                  - 4968
+                                                  - - - &id001 ['1', '1']
+                                                      - STRING.String
+                                                    - - &id002 [rem, '0', '0', '0',
+                                                        '1']
+                                                      - SET.Set
+                                                    - - &id003 ['2', key, '0', '0',
+                                                        '0', '1']
+                                                      - STRING.String
+                                                    - - ['1', '1', '0', '0', key,
+                                                        '0', '0', '0', '1']
+                                                      - STRING.String
+                                                    - - ['0', '0', '0', '0', key,
+                                                        '0', '0', '0', '1']
+                                                      - STRING.String
+                                                    - - &id004 ['0', '1', key, '0',
+                                                        '0', '0', '1']
+                                                      - MAP.Map
+                                                    - - &id005 ['1', '0', '1']
+                                                      - STRING.String
+                                                    - - &id006 ['2', '0', '1']
+                                                      - STRING.String
+                                                    - - &id007 ['3', '0', '1']
+                                                      - STRING.String
+                                                    - - &id008 ['4', '0', '1']
+                                                      - STRING.String
+                                                    - - ['0', '0', '1', '0', '0',
+                                                        key, '0', '0', '0', '1']
+                                                      - MAP.Map
+                                                - [STRING.String]
+                                              - - inj{SortBool{}, SortKItem{}}
+                                                - &id009
+                                                  action:
+                                                  - 4968
+                                                  - - - *id001
+                                                      - STRING.String
+                                                    - - *id002
+                                                      - SET.Set
+                                                    - - *id003
+                                                      - STRING.String
+                                                    - - ['1', '1', '0', '0', key,
+                                                        '0', '0', '0', '1']
+                                                      - STRING.String
+                                                    - - ['0', '0', '0', key, '0',
+                                                        '0', '0', '1']
+                                                      - STRING.String
+                                                    - - *id004
+                                                      - MAP.Map
+                                                    - - *id005
+                                                      - STRING.String
+                                                    - - *id006
+                                                      - STRING.String
+                                                    - - *id007
+                                                      - STRING.String
+                                                    - - *id008
+                                                      - STRING.String
+                                                    - - ['0', '0', '1', '0', '0',
+                                                        key, '0', '0', '0', '1']
+                                                      - MAP.Map
+                                                - [BOOL.Bool]
+                                              - - inj{SortConstructorName{}, SortKItem{}}
+                                                - *id009
+                                                - [STRING.String]
+                                              - - inj{SortInt{}, SortKItem{}}
+                                                - *id009
+                                                - [INT.Int]
+                                              - - inj{SortCons{}, SortKItem{}}
+                                                - *id009
+                                                - [STRING.String]
+                                              - - inj{SortString{}, SortKItem{}}
+                                                - *id009
+                                                - [STRING.String]
+                                              sort: STRING.String
+                                              occurrence: ['0', '0', '0', key, '0',
+                                                '0', '0', '1']
+                                            - [MAP.Map]
+                                          sort: STRING.String
+                                          occurrence: ['0', '1', '0', '0', key, '0',
+                                            '0', '0', '1']
                                         - [STRING.String, STRING.String]
                                       sort: STRING.String
-                                      occurrence: ['0', '0', '0', '0', key, '0', '0',
-                                        '0', '1']
-                                    - [STRING.String]
-                                  - - inj{SortVal{}, SortKItem{}}
-                                    - fail
-                                    - [STRING.String]
-                                  - - inj{SortBool{}, SortKItem{}}
-                                    - fail
-                                    - [BOOL.Bool]
-                                  - - inj{SortConstructorName{}, SortKItem{}}
-                                    - fail
-                                    - [STRING.String]
-                                  - - inj{SortInt{}, SortKItem{}}
-                                    - fail
-                                    - [INT.Int]
-                                  - - inj{SortName{}, SortKItem{}}
-                                    - fail
-                                    - [STRING.String]
-                                  - - inj{SortCons{}, SortKItem{}}
-                                    - fail
-                                    - [STRING.String]
-                                  - - inj{SortString{}, SortKItem{}}
-                                    - fail
-                                    - [STRING.String]
+                                      occurrence: ['1', '0', '0', key, '0', '0', '0',
+                                        '1']
+                                    - [STRING.String, STRING.String]
                                   sort: STRING.String
-                                  occurrence: ['0', '0', '0', key, '0', '0', '0',
-                                    '1']
-                                - [STRING.String, STRING.String]
+                                  occurrence: ['0', '0', key, '0', '0', '0', '1']
+                                - [STRING.String]
                               sort: STRING.String
-                              occurrence: ['0', '0', key, '0', '0', '0', '1']
-                            - [STRING.String]
+                              occurrence: ['0', key, '0', '0', '0', '1']
+                            - [MAP.Map]
                           sort: STRING.String
-                          occurrence: ['0', key, '0', '0', '0', '1']
+                          occurrence: ['1', key, '0', '0', '0', '1']
                         - [STRING.String, STRING.String, STRING.String]
                       sort: STRING.String
                       occurrence: [key, '0', '0', '0', '1']
@@ -126,12 +145,12 @@ specializations:
                 isnull: true
                 sort: STRING.String
                 occurrence: [key, '0', '0', '0', '1']
-              iterator: *id002
+              iterator: *id010
               function: set_iterator_next
               binding: [key, '0', '0', '0', '1']
               sort: STRING.String
             function: set_iterator
-            collection: *id002
+            collection: *id010
             sort: SET.Set
           - [SET.Set]
         sort: STRING.String

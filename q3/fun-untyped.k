@@ -35,6 +35,9 @@ module FUN-UNTYPED-COMMON
                > "!" Exp                           [strict, group(arith)]
                > Exp "&&" Exp                      [strict(1), left, group(arith)]
                > Exp "||" Exp                      [strict(1), left, group(arith)]
+               > "spawn" Exp [strict, prefer]
+               > "join" Exp [strict, prefer]
+
   syntax Exp ::= "if" Exp "then" Exp "else" Exp    [strict(1)]
   syntax Exp ::= "[" Exps "]"                             [strict, klabel(list)]
                | "head" [macro] | "tail" [macro] | "null?" [macro]
@@ -91,9 +94,7 @@ module FUN-UNTYPED-COMMON
 
   syntax Exp ::= "print" Exp [strict, group(print)]
               |  "read"
-              | "spawn" "(" Exp ")" ";" [strict, prefer]
-              | "join" Exp ";"
-
+              
 
   syntax priorities @__FUN-UNTYPED-COMMON
                   > apply
@@ -227,7 +228,7 @@ module FUN-UNTYPED
       <input> ListItem(I:Int) => .List ... </input> [group(read)]
 
   rule <thread>...
-      <k> spawn (S); => !T:Int ... </k>
+      <k> spawn S => !T:Int ... </k>
       <env> Env </env>
       ...</thread>
       (.Bag => <thread> ...
@@ -236,7 +237,7 @@ module FUN-UNTYPED
         <id> !T </id>
         ...</thread>)
 
-  rule <k> join T:Int; => . ...</k>
+  rule <k> join T:Int => . ...</k>
       <terminated> ... SetItem(T) ... </terminated>
 
   syntax Name ::= "$x" [token]

@@ -8,7 +8,7 @@ specializations:
         specializations:
         - - inj{SortTerminatedCell{}, SortKItem{}}
           - action:
-            - 5264
+            - 5316
             - - - ['0', '0', '1']
                 - STRING.String
           - [STRING.String]

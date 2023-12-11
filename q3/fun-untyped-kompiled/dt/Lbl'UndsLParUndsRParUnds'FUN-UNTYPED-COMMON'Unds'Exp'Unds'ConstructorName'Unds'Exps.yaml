@@ -2,7 +2,7 @@ default: fail
 specializations:
 - - inj{SortVals{}, SortExps{}}
   - action:
-    - 4847
+    - 4897
     - - - &id001 ['1']
         - STRING.String
       - - ['0', '2']
@@ -10,7 +10,7 @@ specializations:
   - [STRING.String]
 - - inj{SortBottoms{}, SortExps{}}
   - action:
-    - 4847
+    - 4897
     - - - *id001
         - STRING.String
       - - &id002 ['2']

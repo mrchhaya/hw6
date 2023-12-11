@@ -6,849 +6,164 @@ specializations:
     - - Lbl'-LT-'T'-GT-'{}
       - default: null
         specializations:
-        - - Lbl'-LT-'threads'-GT-'{}
-          - next:
-              next:
-                default: null
-                specializations:
-                - - '0'
-                  - fail
-                  - [SET.Set]
-                - - '1'
-                  - args:
-                    - - &id033 ['0', '0', '0', '1']
-                      - SET.Set
-                    - - [key, '0', '0', '0', '1']
-                      - STRING.String
+        - - Lbl'-LT-'output'-GT-'{}
+          - args:
+            - - &id001 ['0', '3', '0', '1']
+              - LIST.List
+            next:
+              default: &id002
+                args:
+                - - *id001
+                  - LIST.List
+                - - [lit, '3', MINT.MInt 64]
+                  - MINT.MInt 64
+                next:
+                  args:
+                  - - *id001
+                    - LIST.List
+                  - - [lit, '2', MINT.MInt 64]
+                    - MINT.MInt 64
+                  next:
+                    args:
+                    - - *id001
+                      - LIST.List
+                    - - [lit, '1', MINT.MInt 64]
+                      - MINT.MInt 64
                     next:
-                      default: null
-                      specializations:
-                      - - Lbl'-LT-'thread'-GT-'{}
-                        - default: null
-                          specializations:
-                          - - Lbl'-LT-'k'-GT-'{}
-                            - default: fail
-                              specializations:
-                              - - kseq{}
-                                - default: fail
-                                  specializations:
-                                  - - kseq{}
-                                    - default: fail
-                                      specializations:
-                                      - - Lbl'Hash'freezerif'Unds'then'Unds'else'UndsUnds'FUN-UNTYPED-COMMON'Unds'Exp'Unds'Exp'Unds'Exp'Unds'Exp0'Unds'{}
-                                        - default: fail
-                                          specializations:
-                                          - - kseq{}
-                                            - default: fail
-                                              specializations:
-                                              - - dotk{}
-                                                - default: fail
-                                                  specializations:
-                                                  - - kseq{}
-                                                    - default: fail
-                                                      specializations:
-                                                      - - dotk{}
-                                                        - default: fail
-                                                          specializations:
-                                                          - - inj{SortExp{}, SortKItem{}}
-                                                            - default: fail
-                                                              specializations:
-                                                              - - inj{SortExp{}, SortKItem{}}
-                                                                - default: fail
-                                                                  specializations:
-                                                                  - - inj{SortExp{},
-                                                                      SortKItem{}}
-                                                                    - args:
-                                                                      - - &id001 [
-                                                                          '0', '0',
-                                                                          '0', '0',
-                                                                          key, '0',
-                                                                          '0', '0',
-                                                                          '1']
-                                                                        - STRING.String
-                                                                      next:
-                                                                        default: null
-                                                                        specializations:
-                                                                        - - '1'
-                                                                          - action:
-                                                                            - 4913
-                                                                            - - - &id003 [
-                                                                                  '1',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id004 [
-                                                                                  rem,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - SET.Set
-                                                                              - - &id005 [
-                                                                                  '1',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id006 [
-                                                                                  '1',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id007 [
-                                                                                  '2',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id008 [
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id009 [
-                                                                                  '2',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id010 [
-                                                                                  '3',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id011 [
-                                                                                  '4',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - *id001
-                                                                                - STRING.String
-                                                                              - - [
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id012 [
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                          - []
-                                                                        - - '0'
-                                                                          - fail
-                                                                          - []
-                                                                        bitwidth: 1
-                                                                        sort: BOOL.Bool
-                                                                        occurrence: &id002 [
-                                                                          side_condition_4913]
-                                                                      function: side_condition_4913
-                                                                      sort: BOOL.Bool
-                                                                      occurrence: *id002
-                                                                    - [STRING.String]
-                                                                  - - inj{SortVal{},
-                                                                      SortKItem{}}
-                                                                    - &id014
-                                                                      args:
-                                                                      - - *id001
-                                                                        - STRING.String
-                                                                      next:
-                                                                        default: null
-                                                                        specializations:
-                                                                        - - '1'
-                                                                          - action:
-                                                                            - 4913
-                                                                            - - - *id003
-                                                                                - STRING.String
-                                                                              - - *id004
-                                                                                - SET.Set
-                                                                              - - *id005
-                                                                                - STRING.String
-                                                                              - - *id006
-                                                                                - STRING.String
-                                                                              - - *id007
-                                                                                - STRING.String
-                                                                              - - *id008
-                                                                                - STRING.String
-                                                                              - - *id009
-                                                                                - STRING.String
-                                                                              - - *id010
-                                                                                - STRING.String
-                                                                              - - *id011
-                                                                                - STRING.String
-                                                                              - - *id001
-                                                                                - STRING.String
-                                                                              - - &id015 [
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - *id012
-                                                                                - STRING.String
-                                                                          - []
-                                                                        - - '0'
-                                                                          - fail
-                                                                          - []
-                                                                        bitwidth: 1
-                                                                        sort: BOOL.Bool
-                                                                        occurrence: &id013 [
-                                                                          side_condition_4913]
-                                                                      function: side_condition_4913
-                                                                      sort: BOOL.Bool
-                                                                      occurrence: *id013
-                                                                    - [STRING.String]
-                                                                  - - inj{SortBool{},
-                                                                      SortKItem{}}
-                                                                    - *id014
-                                                                    - [BOOL.Bool]
-                                                                  - - inj{SortConstructorName{},
-                                                                      SortKItem{}}
-                                                                    - *id014
-                                                                    - [STRING.String]
-                                                                  - - inj{SortInt{},
-                                                                      SortKItem{}}
-                                                                    - *id014
-                                                                    - [INT.Int]
-                                                                  - - inj{SortName{},
-                                                                      SortKItem{}}
-                                                                    - *id014
-                                                                    - [STRING.String]
-                                                                  - - inj{SortCons{},
-                                                                      SortKItem{}}
-                                                                    - *id014
-                                                                    - [STRING.String]
-                                                                  - - inj{SortString{},
-                                                                      SortKItem{}}
-                                                                    - *id014
-                                                                    - [STRING.String]
-                                                                  sort: STRING.String
-                                                                  occurrence: *id015
-                                                                - [STRING.String]
-                                                              - - inj{SortVal{}, SortKItem{}}
-                                                                - &id020
-                                                                  default: fail
-                                                                  specializations:
-                                                                  - - inj{SortExp{},
-                                                                      SortKItem{}}
-                                                                    - args:
-                                                                      - - *id001
-                                                                        - STRING.String
-                                                                      next:
-                                                                        default: null
-                                                                        specializations:
-                                                                        - - '1'
-                                                                          - action:
-                                                                            - 4913
-                                                                            - - - *id003
-                                                                                - STRING.String
-                                                                              - - *id004
-                                                                                - SET.Set
-                                                                              - - *id005
-                                                                                - STRING.String
-                                                                              - - *id006
-                                                                                - STRING.String
-                                                                              - - *id007
-                                                                                - STRING.String
-                                                                              - - *id008
-                                                                                - STRING.String
-                                                                              - - *id009
-                                                                                - STRING.String
-                                                                              - - *id010
-                                                                                - STRING.String
-                                                                              - - *id011
-                                                                                - STRING.String
-                                                                              - - *id001
-                                                                                - STRING.String
-                                                                              - - [
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id017 [
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                          - []
-                                                                        - - '0'
-                                                                          - fail
-                                                                          - []
-                                                                        bitwidth: 1
-                                                                        sort: BOOL.Bool
-                                                                        occurrence: &id016 [
-                                                                          side_condition_4913]
-                                                                      function: side_condition_4913
-                                                                      sort: BOOL.Bool
-                                                                      occurrence: *id016
-                                                                    - [STRING.String]
-                                                                  - - inj{SortVal{},
-                                                                      SortKItem{}}
-                                                                    - &id019
-                                                                      args:
-                                                                      - - *id001
-                                                                        - STRING.String
-                                                                      next:
-                                                                        default: null
-                                                                        specializations:
-                                                                        - - '1'
-                                                                          - action:
-                                                                            - 4913
-                                                                            - - - *id003
-                                                                                - STRING.String
-                                                                              - - *id004
-                                                                                - SET.Set
-                                                                              - - *id005
-                                                                                - STRING.String
-                                                                              - - *id006
-                                                                                - STRING.String
-                                                                              - - *id007
-                                                                                - STRING.String
-                                                                              - - *id008
-                                                                                - STRING.String
-                                                                              - - *id009
-                                                                                - STRING.String
-                                                                              - - *id010
-                                                                                - STRING.String
-                                                                              - - *id011
-                                                                                - STRING.String
-                                                                              - - *id001
-                                                                                - STRING.String
-                                                                              - - *id015
-                                                                                - STRING.String
-                                                                              - - *id017
-                                                                                - STRING.String
-                                                                          - []
-                                                                        - - '0'
-                                                                          - fail
-                                                                          - []
-                                                                        bitwidth: 1
-                                                                        sort: BOOL.Bool
-                                                                        occurrence: &id018 [
-                                                                          side_condition_4913]
-                                                                      function: side_condition_4913
-                                                                      sort: BOOL.Bool
-                                                                      occurrence: *id018
-                                                                    - [STRING.String]
-                                                                  - - inj{SortBool{},
-                                                                      SortKItem{}}
-                                                                    - *id019
-                                                                    - [BOOL.Bool]
-                                                                  - - inj{SortConstructorName{},
-                                                                      SortKItem{}}
-                                                                    - *id019
-                                                                    - [STRING.String]
-                                                                  - - inj{SortInt{},
-                                                                      SortKItem{}}
-                                                                    - *id019
-                                                                    - [INT.Int]
-                                                                  - - inj{SortName{},
-                                                                      SortKItem{}}
-                                                                    - *id019
-                                                                    - [STRING.String]
-                                                                  - - inj{SortCons{},
-                                                                      SortKItem{}}
-                                                                    - *id019
-                                                                    - [STRING.String]
-                                                                  - - inj{SortString{},
-                                                                      SortKItem{}}
-                                                                    - *id019
-                                                                    - [STRING.String]
-                                                                  sort: STRING.String
-                                                                  occurrence: *id015
-                                                                - [STRING.String]
-                                                              - - inj{SortBool{},
-                                                                  SortKItem{}}
-                                                                - *id020
-                                                                - [BOOL.Bool]
-                                                              - - inj{SortConstructorName{},
-                                                                  SortKItem{}}
-                                                                - *id020
-                                                                - [STRING.String]
-                                                              - - inj{SortInt{}, SortKItem{}}
-                                                                - *id020
-                                                                - [INT.Int]
-                                                              - - inj{SortName{},
-                                                                  SortKItem{}}
-                                                                - *id020
-                                                                - [STRING.String]
-                                                              - - inj{SortCons{},
-                                                                  SortKItem{}}
-                                                                - *id020
-                                                                - [STRING.String]
-                                                              - - inj{SortString{},
-                                                                  SortKItem{}}
-                                                                - *id020
-                                                                - [STRING.String]
-                                                              sort: STRING.String
-                                                              occurrence: *id017
-                                                            - [STRING.String]
-                                                          - - inj{SortVal{}, SortKItem{}}
-                                                            - &id032
-                                                              default: fail
-                                                              specializations:
-                                                              - - inj{SortExp{}, SortKItem{}}
-                                                                - default: fail
-                                                                  specializations:
-                                                                  - - inj{SortExp{},
-                                                                      SortKItem{}}
-                                                                    - args:
-                                                                      - - &id021 [
-                                                                          '0', '0',
-                                                                          '0', key,
-                                                                          '0', '0',
-                                                                          '0', '1']
-                                                                        - STRING.String
-                                                                      next:
-                                                                        default: null
-                                                                        specializations:
-                                                                        - - '1'
-                                                                          - action:
-                                                                            - 4913
-                                                                            - - - *id003
-                                                                                - STRING.String
-                                                                              - - *id004
-                                                                                - SET.Set
-                                                                              - - *id005
-                                                                                - STRING.String
-                                                                              - - *id006
-                                                                                - STRING.String
-                                                                              - - *id007
-                                                                                - STRING.String
-                                                                              - - *id008
-                                                                                - STRING.String
-                                                                              - - *id009
-                                                                                - STRING.String
-                                                                              - - *id010
-                                                                                - STRING.String
-                                                                              - - *id011
-                                                                                - STRING.String
-                                                                              - - *id021
-                                                                                - STRING.String
-                                                                              - - [
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id023 [
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                          - []
-                                                                        - - '0'
-                                                                          - fail
-                                                                          - []
-                                                                        bitwidth: 1
-                                                                        sort: BOOL.Bool
-                                                                        occurrence: &id022 [
-                                                                          side_condition_4913]
-                                                                      function: side_condition_4913
-                                                                      sort: BOOL.Bool
-                                                                      occurrence: *id022
-                                                                    - [STRING.String]
-                                                                  - - inj{SortVal{},
-                                                                      SortKItem{}}
-                                                                    - &id025
-                                                                      args:
-                                                                      - - *id021
-                                                                        - STRING.String
-                                                                      next:
-                                                                        default: null
-                                                                        specializations:
-                                                                        - - '1'
-                                                                          - action:
-                                                                            - 4913
-                                                                            - - - *id003
-                                                                                - STRING.String
-                                                                              - - *id004
-                                                                                - SET.Set
-                                                                              - - *id005
-                                                                                - STRING.String
-                                                                              - - *id006
-                                                                                - STRING.String
-                                                                              - - *id007
-                                                                                - STRING.String
-                                                                              - - *id008
-                                                                                - STRING.String
-                                                                              - - *id009
-                                                                                - STRING.String
-                                                                              - - *id010
-                                                                                - STRING.String
-                                                                              - - *id011
-                                                                                - STRING.String
-                                                                              - - *id021
-                                                                                - STRING.String
-                                                                              - - &id026 [
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - *id023
-                                                                                - STRING.String
-                                                                          - []
-                                                                        - - '0'
-                                                                          - fail
-                                                                          - []
-                                                                        bitwidth: 1
-                                                                        sort: BOOL.Bool
-                                                                        occurrence: &id024 [
-                                                                          side_condition_4913]
-                                                                      function: side_condition_4913
-                                                                      sort: BOOL.Bool
-                                                                      occurrence: *id024
-                                                                    - [STRING.String]
-                                                                  - - inj{SortBool{},
-                                                                      SortKItem{}}
-                                                                    - *id025
-                                                                    - [BOOL.Bool]
-                                                                  - - inj{SortConstructorName{},
-                                                                      SortKItem{}}
-                                                                    - *id025
-                                                                    - [STRING.String]
-                                                                  - - inj{SortInt{},
-                                                                      SortKItem{}}
-                                                                    - *id025
-                                                                    - [INT.Int]
-                                                                  - - inj{SortName{},
-                                                                      SortKItem{}}
-                                                                    - *id025
-                                                                    - [STRING.String]
-                                                                  - - inj{SortCons{},
-                                                                      SortKItem{}}
-                                                                    - *id025
-                                                                    - [STRING.String]
-                                                                  - - inj{SortString{},
-                                                                      SortKItem{}}
-                                                                    - *id025
-                                                                    - [STRING.String]
-                                                                  sort: STRING.String
-                                                                  occurrence: *id026
-                                                                - [STRING.String]
-                                                              - - inj{SortVal{}, SortKItem{}}
-                                                                - &id031
-                                                                  default: fail
-                                                                  specializations:
-                                                                  - - inj{SortExp{},
-                                                                      SortKItem{}}
-                                                                    - args:
-                                                                      - - *id021
-                                                                        - STRING.String
-                                                                      next:
-                                                                        default: null
-                                                                        specializations:
-                                                                        - - '1'
-                                                                          - action:
-                                                                            - 4913
-                                                                            - - - *id003
-                                                                                - STRING.String
-                                                                              - - *id004
-                                                                                - SET.Set
-                                                                              - - *id005
-                                                                                - STRING.String
-                                                                              - - *id006
-                                                                                - STRING.String
-                                                                              - - *id007
-                                                                                - STRING.String
-                                                                              - - *id008
-                                                                                - STRING.String
-                                                                              - - *id009
-                                                                                - STRING.String
-                                                                              - - *id010
-                                                                                - STRING.String
-                                                                              - - *id011
-                                                                                - STRING.String
-                                                                              - - *id021
-                                                                                - STRING.String
-                                                                              - - [
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                              - - &id028 [
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '1',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  key,
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '0',
-                                                                                  '1']
-                                                                                - STRING.String
-                                                                          - []
-                                                                        - - '0'
-                                                                          - fail
-                                                                          - []
-                                                                        bitwidth: 1
-                                                                        sort: BOOL.Bool
-                                                                        occurrence: &id027 [
-                                                                          side_condition_4913]
-                                                                      function: side_condition_4913
-                                                                      sort: BOOL.Bool
-                                                                      occurrence: *id027
-                                                                    - [STRING.String]
-                                                                  - - inj{SortVal{},
-                                                                      SortKItem{}}
-                                                                    - &id030
-                                                                      args:
-                                                                      - - *id021
-                                                                        - STRING.String
-                                                                      next:
-                                                                        default: null
-                                                                        specializations:
-                                                                        - - '1'
-                                                                          - action:
-                                                                            - 4913
-                                                                            - - - *id003
-                                                                                - STRING.String
-                                                                              - - *id004
-                                                                                - SET.Set
-                                                                              - - *id005
-                                                                                - STRING.String
-                                                                              - - *id006
-                                                                                - STRING.String
-                                                                              - - *id007
-                                                                                - STRING.String
-                                                                              - - *id008
-                                                                                - STRING.String
-                                                                              - - *id009
-                                                                                - STRING.String
-                                                                              - - *id010
-                                                                                - STRING.String
-                                                                              - - *id011
-                                                                                - STRING.String
-                                                                              - - *id021
-                                                                                - STRING.String
-                                                                              - - *id026
-                                                                                - STRING.String
-                                                                              - - *id028
-                                                                                - STRING.String
-                                                                          - []
-                                                                        - - '0'
-                                                                          - fail
-                                                                          - []
-                                                                        bitwidth: 1
-                                                                        sort: BOOL.Bool
-                                                                        occurrence: &id029 [
-                                                                          side_condition_4913]
-                                                                      function: side_condition_4913
-                                                                      sort: BOOL.Bool
-                                                                      occurrence: *id029
-                                                                    - [STRING.String]
-                                                                  - - inj{SortBool{},
-                                                                      SortKItem{}}
-                                                                    - *id030
-                                                                    - [BOOL.Bool]
-                                                                  - - inj{SortConstructorName{},
-                                                                      SortKItem{}}
-                                                                    - *id030
-                                                                    - [STRING.String]
-                                                                  - - inj{SortInt{},
-                                                                      SortKItem{}}
-                                                                    - *id030
-                                                                    - [INT.Int]
-                                                                  - - inj{SortName{},
-                                                                      SortKItem{}}
-                                                                    - *id030
-                                                                    - [STRING.String]
-                                                                  - - inj{SortCons{},
-                                                                      SortKItem{}}
-                                                                    - *id030
-                                                                    - [STRING.String]
-                                                                  - - inj{SortString{},
-                                                                      SortKItem{}}
-                                                                    - *id030
-                                                                    - [STRING.String]
-                                                                  sort: STRING.String
-                                                                  occurrence: *id026
-                                                                - [STRING.String]
-                                                              - - inj{SortBool{},
-                                                                  SortKItem{}}
-                                                                - *id031
-                                                                - [BOOL.Bool]
-                                                              - - inj{SortConstructorName{},
-                                                                  SortKItem{}}
-                                                                - *id031
-                                                                - [STRING.String]
-                                                              - - inj{SortInt{}, SortKItem{}}
-                                                                - *id031
-                                                                - [INT.Int]
-                                                              - - inj{SortName{},
-                                                                  SortKItem{}}
-                                                                - *id031
-                                                                - [STRING.String]
-                                                              - - inj{SortCons{},
-                                                                  SortKItem{}}
-                                                                - *id031
-                                                                - [STRING.String]
-                                                              - - inj{SortString{},
-                                                                  SortKItem{}}
-                                                                - *id031
-                                                                - [STRING.String]
-                                                              sort: STRING.String
-                                                              occurrence: *id028
-                                                            - [STRING.String]
-                                                          - - inj{SortBool{}, SortKItem{}}
-                                                            - *id032
-                                                            - [BOOL.Bool]
-                                                          - - inj{SortConstructorName{},
-                                                              SortKItem{}}
-                                                            - *id032
-                                                            - [STRING.String]
-                                                          - - inj{SortInt{}, SortKItem{}}
-                                                            - *id032
-                                                            - [INT.Int]
-                                                          - - inj{SortName{}, SortKItem{}}
-                                                            - *id032
-                                                            - [STRING.String]
-                                                          - - inj{SortCons{}, SortKItem{}}
-                                                            - *id032
-                                                            - [STRING.String]
-                                                          - - inj{SortString{}, SortKItem{}}
-                                                            - *id032
-                                                            - [STRING.String]
-                                                          sort: STRING.String
-                                                          occurrence: ['0', '0', '0',
-                                                            key, '0', '0', '0', '1']
-                                                        - []
-                                                      sort: STRING.String
-                                                      occurrence: ['1', '0', '0',
-                                                        '1', '0', '0', key, '0', '0',
-                                                        '0', '1']
-                                                    - [STRING.String, STRING.String]
-                                                  sort: STRING.String
-                                                  occurrence: ['0', '0', '1', '0',
-                                                    '0', key, '0', '0', '0', '1']
-                                                - []
-                                              sort: STRING.String
-                                              occurrence: ['1', '1', '0', '1', '0',
-                                                '0', key, '0', '0', '0', '1']
-                                            - [STRING.String, STRING.String]
-                                          sort: STRING.String
-                                          occurrence: ['1', '0', '1', '0', '0', key,
-                                            '0', '0', '0', '1']
-                                        - [STRING.String, STRING.String]
-                                      sort: STRING.String
-                                      occurrence: ['0', '1', '0', '0', key, '0', '0',
-                                        '0', '1']
-                                    - [STRING.String, STRING.String]
-                                  sort: STRING.String
-                                  occurrence: ['1', '0', '0', key, '0', '0', '0',
-                                    '1']
-                                - [STRING.String, STRING.String]
-                              sort: STRING.String
-                              occurrence: ['0', '0', key, '0', '0', '0', '1']
-                            - [STRING.String]
-                          sort: STRING.String
-                          occurrence: ['0', key, '0', '0', '0', '1']
-                        - [STRING.String, STRING.String, STRING.String]
+                      args:
+                      - - *id001
+                        - LIST.List
+                      - - [lit, '0', MINT.MInt 64]
+                        - MINT.MInt 64
+                      next:
+                        default: fail
+                        specializations:
+                        - - inj{SortString{}, SortKItem{}}
+                          - default: fail
+                            specializations:
+                            - - inj{SortStream{}, SortKItem{}}
+                              - default: fail
+                                specializations:
+                                - - inj{SortStream{}, SortKItem{}}
+                                  - default: fail
+                                    specializations:
+                                    - - Lbl'Hash'buffer'LParUndsRParUnds'K-IO'Unds'Stream'Unds'K{}
+                                      - default: fail
+                                        specializations:
+                                        - - Lbl'Hash'ostream'LParUndsRParUnds'K-IO'Unds'Stream'Unds'Int{}
+                                          - default: fail
+                                            specializations:
+                                            - - kseq{}
+                                              - default: fail
+                                                specializations:
+                                                - - dotk{}
+                                                  - default: fail
+                                                    specializations:
+                                                    - - inj{SortString{}, SortKItem{}}
+                                                      - args:
+                                                        - - ['0', '3', '0', '1']
+                                                          - LIST.List
+                                                        - - [lit, '4', MINT.MInt 64]
+                                                          - MINT.MInt 64
+                                                        - - [lit, '0', MINT.MInt 64]
+                                                          - MINT.MInt 64
+                                                        next:
+                                                          action:
+                                                          - 4913
+                                                          - - - ['1', '1']
+                                                              - STRING.String
+                                                            - - ['0', '0', '0', '0',
+                                                                '3', '0', '1']
+                                                              - INT.Int
+                                                            - - ['1', '0', '3', '0',
+                                                                '1']
+                                                              - STRING.String
+                                                            - - ['4', '0', '3', '0',
+                                                                '1']
+                                                              - LIST.List
+                                                            - - ['0', '0', '1']
+                                                              - STRING.String
+                                                            - - ['1', '0', '1']
+                                                              - STRING.String
+                                                            - - ['2', '0', '1']
+                                                              - STRING.String
+                                                            - - ['4', '0', '1']
+                                                              - STRING.String
+                                                            - - ['0', '0', '0', '0',
+                                                                '2', '0', '3', '0',
+                                                                '1']
+                                                              - STRING.String
+                                                            - - ['0', '3', '0', '3',
+                                                                '0', '1']
+                                                              - STRING.String
+                                                        function: hook_LIST_range_long
+                                                        sort: LIST.List
+                                                        occurrence: ['4', '0', '3',
+                                                          '0', '1']
+                                                      - [STRING.String]
+                                                    sort: STRING.String
+                                                    occurrence: ['0', '0', '0', '2',
+                                                      '0', '3', '0', '1']
+                                                  - []
+                                                sort: STRING.String
+                                                occurrence: ['1', '0', '0', '2', '0',
+                                                  '3', '0', '1']
+                                              - [STRING.String, STRING.String]
+                                            sort: STRING.String
+                                            occurrence: ['0', '0', '2', '0', '3',
+                                              '0', '1']
+                                          - [INT.Int]
+                                        sort: STRING.String
+                                        occurrence: ['0', '0', '0', '3', '0', '1']
+                                      - [STRING.String]
+                                    sort: STRING.String
+                                    occurrence: ['0', '2', '0', '3', '0', '1']
+                                  - [STRING.String]
+                                sort: STRING.String
+                                occurrence: ['0', '0', '3', '0', '1']
+                              - [STRING.String]
+                            sort: STRING.String
+                            occurrence: ['2', '0', '3', '0', '1']
+                          - [STRING.String]
+                        sort: STRING.String
+                        occurrence: ['3', '0', '3', '0', '1']
+                      function: hook_LIST_get_long
                       sort: STRING.String
-                      occurrence: [key, '0', '0', '0', '1']
-                    function: hook_SET_remove
-                    sort: SET.Set
-                    occurrence: [rem, '0', '0', '0', '1']
-                  - [STRING.String, SET.Set]
-                isnull: true
+                      occurrence: ['0', '0', '3', '0', '1']
+                    function: hook_LIST_get_long
+                    sort: STRING.String
+                    occurrence: ['1', '0', '3', '0', '1']
+                  function: hook_LIST_get_long
+                  sort: STRING.String
+                  occurrence: ['2', '0', '3', '0', '1']
+                function: hook_LIST_get_long
                 sort: STRING.String
-                occurrence: [key, '0', '0', '0', '1']
-              iterator: *id033
-              function: set_iterator_next
-              binding: [key, '0', '0', '0', '1']
-              sort: STRING.String
-            function: set_iterator
-            collection: *id033
-            sort: SET.Set
-          - [SET.Set]
+                occurrence: ['3', '0', '3', '0', '1']
+              specializations:
+              - - '0'
+                - fail
+                - []
+              - - '1'
+                - fail
+                - [STRING.String]
+              - - '2'
+                - fail
+                - [STRING.String, STRING.String]
+              - - '3'
+                - fail
+                - [STRING.String, STRING.String, STRING.String]
+              - - '4'
+                - *id002
+                - [STRING.String, STRING.String, STRING.String, STRING.String]
+              bitwidth: 64
+              sort: MINT.MInt 64
+              occurrence: &id003 [size, '0', '3', '0', '1']
+            function: hook_LIST_size_long
+            sort: MINT.MInt 64
+            occurrence: *id003
+          - [LIST.List]
         sort: STRING.String
-        occurrence: ['0', '0', '1']
+        occurrence: ['3', '0', '1']
       - [STRING.String, STRING.String, STRING.String, STRING.String, STRING.String]
     sort: STRING.String
     occurrence: ['0', '1']

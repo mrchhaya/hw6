@@ -9,7 +9,7 @@ specializations:
         - - inj{SortInt{}, SortKItem{}}
           - &id001
             action:
-            - 5236
+            - 5288
             - - - &id002 ['0', '1']
                 - STRING.String
           - [INT.Int]
